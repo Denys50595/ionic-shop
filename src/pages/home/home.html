@@ -1,14 +1,50 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-buttons left>
+      <button class="burger" style="background-color:transparent;">
+        <ion-icon name="ios-menu-outline"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title center>My Store</ion-title>
+    <ion-buttons end>
+      <button class="basket" style="background-color:transparent;">
+        <ion-icon name="ios-basket-outline"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content no-padding>
+  <div class="tool-container">
+    <h3>Authentic World Cup Kits</h3>
+    <ion-searchbar placeholder="Search in store"></ion-searchbar>
+    <ion-toolbar class="filter">
+      <ion-buttons left>
+        <button (click)="listView($event)" class="view-list">
+          <ion-icon [ngClass]="{'active':status}" ios="ios-list" md="md-list"></ion-icon>
+        </button>
+        <button (click)="gridView($event)" class="view-grid">
+          <ion-icon [ngClass]="{'active':!status}" ios="ios-grid" md="md-grid"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-buttons right>
+        <button (click)="productDetails()" class="filter" style="background-color:transparent;">
+          Filter
+        </button>
+        <button class="sort" style="background-color:transparent;">
+          Sort
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </div>
+
+  <list-view *ngIf="status"></list-view>
+  <grid-view *ngIf="!status"></grid-view>
+
+  <ion-footer>
+    <ion-toolbar class="footer-bg">
+      <ion-title>&copy; Footer</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
 </ion-content>
