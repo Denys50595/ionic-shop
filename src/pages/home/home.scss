@@ -4,15 +4,6 @@ page-home {
     padding: 20px 16px;
   }
 
-  .icon, .icon-md {
-    font-size: 24px;
-    color: var(--blue-grey);
-  }
-
-  ion-buttons {
-    margin: 0;
-  }
-
   .filter {
     min-height: 48px;
   }
@@ -38,14 +29,6 @@ page-home {
     & .searchbar-input:focus {
       border: solid 1px var(--azure);
     }
-  }
-
-  button.burger {
-    padding-left: 16px;
-  }
-
-  button.basket {
-    padding-right: 16px;
   }
 
   button.filter {

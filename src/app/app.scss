@@ -14,6 +14,24 @@
   background-color: rgba(255, 255, 255, 0.96);
 }
 
+ion-buttons {
+  margin: 0;
+}
+
+button.burger {
+  padding-left: 16px;
+}
+
+button.basket {
+  padding-right: 16px;
+}
+
+.icon, .icon-md {
+  font-size: 24px;
+  color: var(--blue-grey);
+}
+
+
 .toolbar-title, .toolbar-title-md {
   text-align: center;
   color: var(--dark);
