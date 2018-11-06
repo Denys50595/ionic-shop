@@ -38,13 +38,101 @@
     </ion-toolbar>
   </div>
 
-  <list-view *ngIf="status"></list-view>
-  <grid-view *ngIf="!status"></grid-view>
+  <ion-grid no-padding>
+    <ion-row
+      [class.list-row]="status"
+      [class.grid-row]="!status">
+      <div
+        [class.list-wrap]="status"
+        [class.grid-wrap]="!status">
+        <ion-card
+          [class.list-card]="status"
+          [class.grid-card]="!status">
+          <div
+            [class.list-image-wrap]="status"
+            [class.grid-image-wrap]="!status">
+              <img
+                [class.list-img]="status"
+                [class.grid-img]="!status" src="assets/imgs/salat-grecheskiy.jpg" alt="">
+          </div>
+          <ion-card-content
+            [class.list-card-content]="status"
+            [class.grid-card-content]="!status">
+              <p class="product-name">Some products</p>
+              <p
+                [class.list-brand]="status"
+                [class.grid-brand]="!status">Nike</p>
+              <div class="price-add">
+                <span class="price">165$</span>
+                <button class="button-tiny">Add to Cart</button>
+              </div>
+          </ion-card-content>
+        </ion-card>
+      </div>
 
-  <ion-footer>
+      <div [class.list-wrap]="status" [class.grid-wrap]="!status">
+        <ion-card [class.list-card]="status" [class.grid-card]="!status">
+          <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
+            <img
+              [class.list-img]="status"
+              [class.grid-img]="!status"
+              src="assets/imgs/salat-olive.jpg" alt="">
+          </div>
+          <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
+            <p class="product-name">Some products sdfsfdsf</p>
+            <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
+            <div class="price-add">
+              <span class="price">165$</span>
+              <button class="button-tiny">Add to Cart</button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <div [class.list-wrap]="status" [class.grid-wrap]="!status">
+        <ion-card [class.list-card]="status" [class.grid-card]="!status">
+          <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
+            <img
+              [class.list-img]="status"
+              [class.grid-img]="!status"
+              src="assets/imgs/salat-chuka-sarada.jpg" alt="">
+          </div>
+          <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
+            <p class="product-name">Some products sdfsdfsdf sdfsdf</p>
+            <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
+            <div class="price-add">
+              <span class="price">165$</span>
+              <button class="button-tiny">Add to Cart</button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <div [class.list-wrap]="status" [class.grid-wrap]="!status">
+        <ion-card [class.list-card]="status" [class.grid-card]="!status">
+          <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
+            <img
+              [class.list-img]="status"
+              [class.grid-img]="!status"
+              src="assets/imgs/boloniya.jpg" alt="">
+          </div>
+          <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
+            <p class="product-name">Some products sdfsdfsdf sdfsdf</p>
+            <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
+            <div class="price-add">
+              <span class="price">165$</span>
+              <button class="button-tiny">Add to Cart</button>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </div>
+    </ion-row>
+  </ion-grid>
+
+<ion-footer>
     <ion-toolbar class="footer-bg">
       <ion-title>&copy; Footer</ion-title>
     </ion-toolbar>
-  </ion-footer>
+</ion-footer>
 
 </ion-content>

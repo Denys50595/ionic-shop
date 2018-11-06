@@ -1,92 +1,96 @@
-list-view {
-  .card, .card-md {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    margin: 0;
-    width: 100%;
-    padding: 12px 0 12px 16px;
-    box-shadow: none;
-    border-bottom: 0.5px solid rgba(38, 50, 56, 0.16);
-    border-radius: 0;
-  }
+// list-view {
+//   .list-wrap {
+//     width: 100%;
+//   }
 
-  .row {
-    padding-bottom: 32px;
-  }
+//   .list-card {
+//     display: flex;
+//     flex-direction: row;
+//     height: 100%;
+//     margin: 0;
+//     width: 100%;
+//     padding: 12px 0 12px 16px;
+//     box-shadow: none;
+//     border-bottom: 0.5px solid rgba(38, 50, 56, 0.16);
+//     border-radius: 0;
+//   }
 
-  .card-content, .card-content-md {
-    display: flex;
-    flex-direction: column;
-    padding: 0 16px;
-    height: 100%;
-    width: 100%;
-  }
+//   .row {
+//     padding-bottom: 32px;
+//   }
 
-  .image-wrap {
-    position: relative;
-    min-height: 120px;
-    min-width: 35%;
-  }
+//   .list-card-content {
+//     display: flex;
+//     flex-direction: column;
+//     padding: 0 16px;
+//     height: 100%;
+//     width: 100%;
+//   }
 
-  .product-name {
-    color: #263238;
-    font-family: 'NunitoSans', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: uppercase;
-  }
+//   .image-wrap {
+//     position: relative;
+//     min-height: 120px;
+//     min-width: 35%;
+//   }
 
-  .brand {
-    color: #78909c;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-transform: uppercase;
-  }
+//   .product-name {
+//     color: #263238;
+//     font-family: 'NunitoSans', sans-serif;
+//     font-size: 12px;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: 1.5;
+//     letter-spacing: normal;
+//     text-transform: uppercase;
+//   }
 
-  .price-add {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+//   .brand {
+//     color: #78909c;
+//     font-family: 'Nunito Sans', sans-serif;
+//     font-size: 14px;
+//     font-weight: normal;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: 1.5;
+//     letter-spacing: normal;
+//     text-transform: uppercase;
+//   }
 
-  .button-tiny {
-    background-color:transparent;
-    padding-right: 0;
-    color: #2196f3;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: center;
-    text-transform: uppercase;
-  }
+//   .price-add {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//   }
 
-  .price {
-    color: #263238;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-  }
+//   .button-tiny {
+//     background-color:transparent;
+//     padding-right: 0;
+//     color: #2196f3;
+//     font-family: 'Nunito Sans', sans-serif;
+//     font-size: 12px;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: 1.33;
+//     letter-spacing: normal;
+//     text-align: center;
+//     text-transform: uppercase;
+//   }
 
-  img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-}
+//   .price {
+//     color: #263238;
+//     font-family: 'Nunito Sans', sans-serif;
+//     font-size: 16px;
+//     font-style: normal;
+//     font-stretch: normal;
+//     line-height: 1.43;
+//     letter-spacing: normal;
+//   }
+
+//   img {
+//     position: absolute;
+//     height: 100%;
+//     width: 100%;
+//     object-fit: cover;
+//     border-radius: 4px;
+//   }
+// }
