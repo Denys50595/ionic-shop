@@ -15,119 +15,121 @@
 </ion-header>
 
 <ion-content no-padding>
-  <div class="tool-container">
-    <h3>Authentic World Cup Kits</h3>
-    <ion-searchbar placeholder="Search in store"></ion-searchbar>
-    <ion-toolbar class="filter">
-      <ion-buttons left>
-        <button (click)="listView($event)" class="view-list">
-          <ion-icon [ngClass]="{'active':status}" ios="ios-list" md="md-list"></ion-icon>
-        </button>
-        <button (click)="gridView($event)" class="view-grid">
-          <ion-icon [ngClass]="{'active':!status}" ios="ios-grid" md="md-grid"></ion-icon>
-        </button>
-      </ion-buttons>
-      <ion-buttons right>
-        <button (click)="productDetails()" class="filter" style="background-color:transparent;">
-          Filter
-        </button>
-        <button class="sort" style="background-color:transparent;">
-          Sort
-        </button>
-      </ion-buttons>
-    </ion-toolbar>
-  </div>
+  <div class="content-container">
+    <div class="tool-container">
+      <h3>Authentic World Cup Kits</h3>
+      <ion-searchbar placeholder="Search in store"></ion-searchbar>
+      <ion-toolbar class="filter">
+        <ion-buttons left>
+          <button (click)="listView($event)" class="view-list">
+            <ion-icon [ngClass]="{'active':status}" ios="ios-list" md="md-list"></ion-icon>
+          </button>
+          <button (click)="gridView($event)" class="view-grid">
+            <ion-icon [ngClass]="{'active':!status}" ios="ios-grid" md="md-grid"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-buttons right>
+          <button (click)="productDetails()" class="filter" style="background-color:transparent;">
+            Filter
+          </button>
+          <button class="sort" style="background-color:transparent;">
+            Sort
+          </button>
+        </ion-buttons>
+      </ion-toolbar>
+    </div>
 
-  <ion-grid no-padding>
-    <ion-row
-      [class.list-row]="status"
-      [class.grid-row]="!status">
-      <div
-        [class.list-wrap]="status"
-        [class.grid-wrap]="!status">
-        <ion-card
-          [class.list-card]="status"
-          [class.grid-card]="!status">
-          <div
-            [class.list-image-wrap]="status"
-            [class.grid-image-wrap]="!status">
+    <ion-grid no-padding>
+      <ion-row
+        [class.list-row]="status"
+        [class.grid-row]="!status">
+        <div
+          [class.list-wrap]="status"
+          [class.grid-wrap]="!status">
+          <ion-card
+            [class.list-card]="status"
+            [class.grid-card]="!status">
+            <div
+              [class.list-image-wrap]="status"
+              [class.grid-image-wrap]="!status">
+                <img
+                  [class.list-img]="status"
+                  [class.grid-img]="!status" src="assets/imgs/salat-grecheskiy.jpg" alt="">
+            </div>
+            <ion-card-content
+              [class.list-card-content]="status"
+              [class.grid-card-content]="!status">
+                <p class="product-name">Some products</p>
+                <p
+                  [class.list-brand]="status"
+                  [class.grid-brand]="!status">Nike</p>
+                <div class="price-add">
+                  <span class="price">165$</span>
+                  <button class="button-tiny">Add to Cart</button>
+                </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+
+        <div [class.list-wrap]="status" [class.grid-wrap]="!status">
+          <ion-card [class.list-card]="status" [class.grid-card]="!status">
+            <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
               <img
                 [class.list-img]="status"
-                [class.grid-img]="!status" src="assets/imgs/salat-grecheskiy.jpg" alt="">
-          </div>
-          <ion-card-content
-            [class.list-card-content]="status"
-            [class.grid-card-content]="!status">
-              <p class="product-name">Some products</p>
-              <p
-                [class.list-brand]="status"
-                [class.grid-brand]="!status">Nike</p>
+                [class.grid-img]="!status"
+                src="assets/imgs/salat-olive.jpg" alt="">
+            </div>
+            <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
+              <p class="product-name">Some products sdfsfdsf</p>
+              <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
               <div class="price-add">
                 <span class="price">165$</span>
                 <button class="button-tiny">Add to Cart</button>
               </div>
-          </ion-card-content>
-        </ion-card>
-      </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
 
-      <div [class.list-wrap]="status" [class.grid-wrap]="!status">
-        <ion-card [class.list-card]="status" [class.grid-card]="!status">
-          <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
-            <img
-              [class.list-img]="status"
-              [class.grid-img]="!status"
-              src="assets/imgs/salat-olive.jpg" alt="">
-          </div>
-          <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
-            <p class="product-name">Some products sdfsfdsf</p>
-            <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
-            <div class="price-add">
-              <span class="price">165$</span>
-              <button class="button-tiny">Add to Cart</button>
+        <div [class.list-wrap]="status" [class.grid-wrap]="!status">
+          <ion-card [class.list-card]="status" [class.grid-card]="!status">
+            <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
+              <img
+                [class.list-img]="status"
+                [class.grid-img]="!status"
+                src="assets/imgs/salat-chuka-sarada.jpg" alt="">
             </div>
-          </ion-card-content>
-        </ion-card>
-      </div>
+            <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
+              <p class="product-name">Some products sdfsdfsdf sdfsdf</p>
+              <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
+              <div class="price-add">
+                <span class="price">165$</span>
+                <button class="button-tiny">Add to Cart</button>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
 
-      <div [class.list-wrap]="status" [class.grid-wrap]="!status">
-        <ion-card [class.list-card]="status" [class.grid-card]="!status">
-          <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
-            <img
-              [class.list-img]="status"
-              [class.grid-img]="!status"
-              src="assets/imgs/salat-chuka-sarada.jpg" alt="">
-          </div>
-          <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
-            <p class="product-name">Some products sdfsdfsdf sdfsdf</p>
-            <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
-            <div class="price-add">
-              <span class="price">165$</span>
-              <button class="button-tiny">Add to Cart</button>
+        <div [class.list-wrap]="status" [class.grid-wrap]="!status">
+          <ion-card [class.list-card]="status" [class.grid-card]="!status">
+            <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
+              <img
+                [class.list-img]="status"
+                [class.grid-img]="!status"
+                src="assets/imgs/boloniya.jpg" alt="">
             </div>
-          </ion-card-content>
-        </ion-card>
-      </div>
-
-      <div [class.list-wrap]="status" [class.grid-wrap]="!status">
-        <ion-card [class.list-card]="status" [class.grid-card]="!status">
-          <div [class.list-image-wrap]="status" [class.grid-image-wrap]="!status">
-            <img
-              [class.list-img]="status"
-              [class.grid-img]="!status"
-              src="assets/imgs/boloniya.jpg" alt="">
-          </div>
-          <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
-            <p class="product-name">Some products sdfsdfsdf sdfsdf</p>
-            <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
-            <div class="price-add">
-              <span class="price">165$</span>
-              <button class="button-tiny">Add to Cart</button>
-            </div>
-          </ion-card-content>
-        </ion-card>
-      </div>
-    </ion-row>
-  </ion-grid>
+            <ion-card-content [class.list-card-content]="status" [class.grid-card-content]="!status">
+              <p class="product-name">Some products sdfsdfsdf sdfsdf</p>
+              <p [class.list-brand]="status" [class.grid-brand]="!status">Nike</p>
+              <div class="price-add">
+                <span class="price">165$</span>
+                <button class="button-tiny">Add to Cart</button>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 <ion-footer>
     <ion-toolbar class="footer-bg">
