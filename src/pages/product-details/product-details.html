@@ -16,27 +16,78 @@
 
 
 <ion-content no-padding>
-  <div class="container">
-    <ion-slides pager>
-      <ion-slide>
-        <img src="assets/imgs/salat-grecheskiy.jpg">
-      </ion-slide>
-      <ion-slide>
-        <img src="assets/imgs/salat-olive.jpg">
-      </ion-slide>
-      <ion-slide>
-        <img src="assets/imgs/salat-chuka-sarada.jpg">
-      </ion-slide>
-    </ion-slides>
-  </div>
+  <div class="content-container">
+    <div class="container">
+      <ion-slides pager>
+        <ion-slide>
+          <img src="assets/imgs/salat-grecheskiy.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/salat-olive.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/imgs/salat-chuka-sarada.jpg">
+        </ion-slide>
+      </ion-slides>
+    </div>
 
-  <div class="description-container">
-    <h3>France Authentic Home Jersey 2018</h3>
-    <p class="brand">Nike</p>
-    <span class="price">$165</span>
+    <div class="description-container">
+      <h3>France Authentic Home Jersey 2018</h3>
+      <p class="brand">Nike</p>
+      <span class="price">$165</span>
+    </div>
+
     <div class="bottom-line"></div>
-  </div>
 
+    <div class="product-selection">
+      <div class="product-size">
+        <div class="size">
+          <span class="size-text">Size</span>
+        </div>
+        <div class="multiple-btn">
+          <button class="size-button not-available">S</button>
+          <button class="size-button available">M</button>
+          <button class="size-button active">L</button>
+          <button class="size-button not-available">XL</button>
+          <button class="size-button not-available">XXL</button>
+        </div>
+      </div>
+
+      <div class="product-kit">
+        <div class="kit">
+          <span class="kit-text">Kit</span>
+        </div>
+        <div class="multiple-btn">
+          <button class="kit-button active">home</button>
+          <button class="kit-button available">away</button>
+          <button class="kit-button available">third</button>
+        </div>
+      </div>
+
+      <div class="product-quantity">
+        <div class="quantity">
+          <span class="quantity-text">Qty</span>
+        </div>
+        <div class="multiple-btn">
+          <button class="quantity-button remove">
+            <ion-icon class="quantity-icon" name="remove"></ion-icon>
+          </button>
+          <span class="qty-number">1</span>
+          <button class="quantity-button add">
+            <ion-icon class="quantity-icon" name="add"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <ion-list class="accordion-list">
+      <ion-list-header no-lines no-padding>
+        Customize Your Jersey
+        <ion-icon class="icon-arrow" item-end ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        <!-- <ion-icon item-end ios="ios-arrow-up" md="md-arrow-up"></ion-icon> -->
+      </ion-list-header>
+    </ion-list>
+  </div>
 
   <ion-footer>
     <ion-toolbar class="footer-bg">

@@ -34,15 +34,18 @@ page-product-details {
   }
 
   .description-container {
-    min-height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 25px 16px 18px 16px;
+    padding: 25px 16px 0 16px;
     text-align: center;
   }
 
   .bottom-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
     height: 1px;
     background-color: rgba(127, 151, 163, 0.32);
   }
@@ -76,7 +79,6 @@ page-product-details {
   }
 
   span.price {
-    margin-bottom: 18px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-style: normal;
@@ -85,5 +87,230 @@ page-product-details {
     letter-spacing: normal;
     text-align: center;
     color: var(--dark);
+  }
+
+  .multiple-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .product-selection {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .product-size {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    margin-bottom: 24px;
+  }
+
+  button.size-button {
+    width: 44px;
+    height: 40px;
+    padding: 0;
+    border-radius: 2px;
+    font-family: 'NunitoSans',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  button.available {
+    background-color: transparent;
+    border: solid 1px var(--bluey-grey);
+    color: var(--slate);
+  }
+
+  button.not-available {
+    background-color: var(--ice-blue);
+    color: var(--slate);
+  }
+
+  button.active {
+    background-color: var(--dark);
+    color: #ffffff;
+  }
+
+  div.size {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 40px;
+  }
+
+  span.size-text {
+    width: 100%;
+    font-family: 'NunitoSans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+  }
+
+  .product-kit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 36px;
+    margin-bottom: 32px;
+  }
+
+  button.kit-button {
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    border-radius: 2px;
+    font-family: 'NunitoSans',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  div.kit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 40px;
+  }
+
+  span.kit-text {
+    width: 100%;
+    font-family: 'NunitoSans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+  }
+
+  .product-quantity {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 16px;
+  }
+
+  div.quantity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 40px;
+  }
+
+  span.quantity-text {
+    width: 100%;
+    font-family: 'NunitoSans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+  }
+
+  button.quantity-button {
+    position: relative;
+    width: 44px;
+    height: 40px;
+    padding: 0;
+    border-radius: 2px;
+    font-family: 'NunitoSans',sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  button.remove {
+    background-color: var(--ice-blue);
+  }
+
+  button.add {
+    color: var(--blue-grey);
+    background-color: var(--ice-blue);
+  }
+
+  .qty-number {
+    font-family: 'NunitoSans', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2c393f;
+  }
+
+  .quantity-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .accordion-list {
+    min-height: 48px;
+    padding: 0 16px;
+  }
+
+  .label, .label-md {
+    font-family: 'NunitoSans',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #2c393f;
+  }
+
+  .item-inner {
+    position: relative;
+  }
+
+  .icon-arrow {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: var(--blue-grey);
+  }
+
+  .item-md ion-icon[item-end] {
+    margin: 0;
+  }
+
+  .item, .item-md, .list-header, .list-header-md {
+    margin: 0;
   }
 }
