@@ -16,21 +16,21 @@
 
 
 <ion-content no-padding>
-  <div class="content-container">
-    <div class="container">
-      <ion-slides pager>
-        <ion-slide>
-          <img src="assets/imgs/salat-grecheskiy.jpg">
-        </ion-slide>
-        <ion-slide>
-          <img src="assets/imgs/salat-olive.jpg">
-        </ion-slide>
-        <ion-slide>
-          <img src="assets/imgs/salat-chuka-sarada.jpg">
-        </ion-slide>
-      </ion-slides>
-    </div>
 
+  <div class="container">
+    <ion-slides pager zoom>
+      <ion-slide>
+        <img src="assets/imgs/salat-grecheskiy.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/salat-olive.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/imgs/salat-chuka-sarada.jpg">
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="content-container">
     <div class="description-container">
       <h3>France Authentic Home Jersey 2018</h3>
       <p class="brand">Nike</p>
@@ -87,7 +87,65 @@
         <!-- <ion-icon item-end ios="ios-arrow-up" md="md-arrow-up"></ion-icon> -->
       </ion-list-header>
     </ion-list>
+
+    <div class="add-wrap">
+      <button class="add-btn">Add to cart</button>
+    </div>
+
+    <div class="bottom-line"></div>
+
+    <ion-list class="accordion-list">
+      <ion-list-header no-lines no-padding>
+        Product Details
+        <ion-icon class="icon-arrow" item-end ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        <!-- <ion-icon item-end ios="ios-arrow-up" md="md-arrow-up"></ion-icon> -->
+      </ion-list-header>
+      <ion-list-header no-lines no-padding>
+        Shipping &amp; Returns
+        <ion-icon class="icon-arrow" item-end ios="ios-arrow-down" md="md-arrow-down"></ion-icon>
+        <!-- <ion-icon item-end ios="ios-arrow-up" md="md-arrow-up"></ion-icon> -->
+      </ion-list-header>
+    </ion-list>
+
+    <div class="bottom-line"></div>
+    <h4>You May Also Like</h4>
   </div>
+
+  <ion-slides class="test" slidesPerView="2.2" spaceBetween="10" zoom="false">
+    <ion-slide>
+      <ion-card>
+        <div class="img-wrap">
+          <img src="assets/imgs/salat-olive.jpg" alt="">
+        </div>
+        <ion-card-content>
+          <p class="product-name">Brasil Home 2018</p>
+          <span class="price">165$</span>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <div class="img-wrap">
+          <img src="assets/imgs/salat-olive.jpg" alt="">
+        </div>
+        <ion-card-content>
+          <p class="product-name">Brasil Home 2018</p>
+          <span class="price">165$</span>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-card>
+        <div class="img-wrap">
+          <img src="assets/imgs/salat-olive.jpg" alt="">
+        </div>
+        <ion-card-content>
+          <p class="product-name">Brasil Home 2018</p>
+          <span class="price">165$</span>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
 
   <ion-footer>
     <ion-toolbar class="footer-bg">
